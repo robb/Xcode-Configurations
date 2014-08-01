@@ -4,14 +4,14 @@ if [ ! -e "$HOME/Library/Developer/Xcode/UserData/CodeSnippets" ];
 then
     echo "Linking Code Snippets"
     mkdir -p "$HOME/Library/Developer/Xcode/UserData"
-    ln -shF "$PWD/Code\ Snippets" "$HOME/Library/Developer/Xcode/UserData/CodeSnippets"
+    ln -shfF "$PWD/Code Snippets" "$HOME/Library/Developer/Xcode/UserData/CodeSnippets"
 fi
 
 for group in File\ Templates/*; do
     echo "Linking $group"
 
     mkdir -p "$HOME/Library/Developer/Xcode/Templates/File Templates"
-    ln -shF "$PWD/$group" "$HOME/Library/Developer/Xcode/Templates/$group"
+    ln -shfF "$PWD/$group" "$HOME/Library/Developer/Xcode/Templates/$group"
 done
 
 echo "Installing Scripts/hide_simulator.scpt"
