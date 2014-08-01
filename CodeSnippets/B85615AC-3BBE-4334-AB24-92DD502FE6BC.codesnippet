@@ -16,6 +16,8 @@
 	<string>B85615AC-3BBE-4334-AB24-92DD502FE6BC</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Define a block that will be executed before each spec.</string>
 	<key>IDECodeSnippetTitle</key>
 	<string>Specta beforeEach clause</string>
 	<key>IDECodeSnippetUserSnippet</key>

@@ -16,6 +16,8 @@
 	<string>D35B7214-BE3D-4A02-A0BE-325D46DE5D02</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Create a new describe clause.</string>
 	<key>IDECodeSnippetTitle</key>
 	<string>Specta describe clause</string>
 	<key>IDECodeSnippetUserSnippet</key>

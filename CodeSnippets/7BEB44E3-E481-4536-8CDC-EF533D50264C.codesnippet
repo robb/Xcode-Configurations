@@ -14,6 +14,8 @@
 	<string>7BEB44E3-E481-4536-8CDC-EF533D50264C</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Invoke an Expecta-matcher on a given object.</string>
 	<key>IDECodeSnippetTitle</key>
 	<string>Expecta expectation</string>
 	<key>IDECodeSnippetUserSnippet</key>

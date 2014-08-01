@@ -15,7 +15,7 @@
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>Defines a new property.</string>
+	<string>Define a new property.</string>
 	<key>IDECodeSnippetTitle</key>
 	<string>@property definition</string>
 	<key>IDECodeSnippetUserSnippet</key>
