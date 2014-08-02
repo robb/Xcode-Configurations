@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>error</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>if (error != NULL) {
+    NSString *failureReason = [NSString stringWithFormat:NSLocalizedString(@"&lt;#Failure Reason#&gt;", @""), &lt;#Format Arguments#&gt;];
+
+    NSDictionary *userInfo = @{
+        NSLocalizedDescriptionKey: NSLocalizedString(@"&lt;#Description#&gt;", @""),
+        NSLocalizedFailureReasonErrorKey: failureReason,
+    };
+
+    *error = [NSError errorWithDomain:&lt;#Domain#&gt; code:&lt;#Code#&gt; userInfo:userInfo];
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>7E7E7867-572B-43D1-BD99-58796F7D5DBE</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Conditionally assign an NSError object created with a userInfo dictionary.</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Error Assignment</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
