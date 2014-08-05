@@ -1,20 +1,46 @@
 #!/bin/bash
 
-if [ ! -e "$HOME/Library/Developer/Xcode/UserData/CodeSnippets" ];
-then
-    echo "Linking Code Snippets"
-    mkdir -p "$HOME/Library/Developer/Xcode/UserData"
-    ln -shfF "$PWD/Code Snippets" "$HOME/Library/Developer/Xcode/UserData/CodeSnippets"
+CODE_SNIPPETS="$HOME/Library/Developer/Xcode/UserData/CodeSnippets"
+TEMPLATES="$HOME/Library/Developer/Xcode/Templates/"
+
+# Code Snippets
+
+echo "Linking Code Snippets"
+
+if [ "$(readlink $CODE_SNIPPETS)" = "$PWD/Code Snippets" ]; then
+    >&2 echo "$CODE_SNIPPETS is a symbolic link that points to "$PWD/Code Snippets","
+    >&2 echo "please remove it and try again."
+    exit 1
 fi
 
-for group in File\ Templates/*; do
-    echo "Linking $group"
+mkdir -p "$CODE_SNIPPETS"
 
-    mkdir -p "$HOME/Library/Developer/Xcode/Templates/File Templates"
-    ln -shfF "$PWD/$group" "$HOME/Library/Developer/Xcode/Templates/$group"
+for snippet in Code\ Snippets/*; do
+    ID=$(xmllint -xpath "//key[contains(.,'IDECodeSnippetIdentifier')]/following-sibling::*[1]/text()" "$snippet")
+
+    echo "- $snippet"
+
+    ln -shfF "$PWD/$snippet" "$CODE_SNIPPETS/$ID.codesnippet"
 done
 
-echo "Installing Scripts/hide_simulator.scpt"
+# File Templates
+
+mkdir -p "$TEMPLATES/File Templates"
+
+echo ""
+echo "Linking: File Templates"
+
+for group in File\ Templates/*; do
+    echo "- $group"
+
+    ln -shfF "$PWD/$group" "$TEMPLATES/$group"
+done
+
+echo ""
+echo "Installing Scripts"
+echo "- Scripts/hide_simulator.scpt"
+
+# Scripts
 
 read -d '' HIDE_SIMULATOR <<EOF
 <dict>
@@ -31,4 +57,5 @@ EOF
 defaults write com.apple.dt.Xcode "Xcode.AlertEvents.4_1" -dict-add "Xcode.AlertEvent.TestingGeneratesOutput" "$HIDE_SIMULATOR"
 defaults write com.apple.dt.Xcode "Xcode.AlertEvents" -dict-add "Xcode.AlertEvent.TestingGeneratesOutput" "$HIDE_SIMULATOR"
 
-echo "\nPlease Restart Xcode"
+echo ""
+echo "Please Restart Xcode"
