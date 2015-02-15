@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>DebugPrintable</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>TopLevel</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>extension &lt;#Struct#&gt;: DebugPrintable {
+    public var debugDescription: String {
+        return "\(&lt;#expression#&gt;)"
+    }
+}
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>76BBDAE9-237F-458B-A4D7-A4A1FD982B09</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Impements DebugPrintable for the given Struct or Class.</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>DebugPrintable Implementation</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
