@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>Equatable</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>TopLevel</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>extension &lt;#Struct#&gt;: Equatable {}
+
+&lt;#public#&gt; func == (lhs: &lt;#Struct#&gt;, rhs: &lt;#Struct#&gt;) -&gt; Bool {
+    return lhs.&lt;#property#&gt; == rhs.&lt;#property#&gt;
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>E5228839-A60B-4579-BCB4-88E012F19314</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Implements Equatable for the given Struct or Class.</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Equatable Implementation</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
