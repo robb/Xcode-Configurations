@@ -6,8 +6,8 @@
 //___COPYRIGHT___
 //
 
-#import <Specta/Specta.h>
-#import <Expecta/Expecta.h>
+@import Specta;
+@import Expecta;
 
 #import "___FILEBASENAME___.h"
 

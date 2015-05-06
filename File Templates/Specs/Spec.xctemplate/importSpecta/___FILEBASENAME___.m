@@ -6,7 +6,7 @@
 //___COPYRIGHT___
 //
 
-#import <Specta/Specta.h>
+@import Specta;
 
 #import "___VARIABLE_specClass:identifier___.h"
 

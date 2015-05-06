@@ -62,23 +62,6 @@
 		</dict>
 		<dict>
 			<key>Default</key>
-			<string>true</string>
-			<key>Identifier</key>
-			<string>useShorthand</string>
-			<key>Name</key>
-			<string>Use shorthand syntax</string>
-			<key>Type</key>
-			<string>checkbox</string>
-			<key>RequiredOptions</key>
-			<dict>
-				<key>importExpecta</key>
-				<array>
-					<string>true</string>
-				</array>
-			</dict>
-		</dict>
-		<dict>
-			<key>Default</key>
 			<string>___VARIABLE_specClass:identifier___Spec</string>
 			<key>Identifier</key>
 			<string>productName</string>
